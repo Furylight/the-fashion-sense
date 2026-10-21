@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Atelier Location - The Fashion Sense</title>
+  <meta name="description" content="Get in touch with our customer care team, visit our flagship store in Colombo, or message us on WhatsApp.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      Questions? Reach our concierge on WhatsApp: +94 (77) 123 4567 | Open Daily 10 AM – 8 PM
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a href="index.html" class="brand-logo">
+        THE FASHION <span>SENSE</span>
+        <small>HAUTE COUTURE & LIFESTYLE</small>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop Collection</a>
+        <a href="shop.html?cat=women" class="nav-link">Women</a>
+        <a href="shop.html?cat=men" class="nav-link">Men</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link active">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="shop.html" class="action-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="shop.html" class="action-btn" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge wishlist-count-badge">0</span>
+        </a>
+        <button class="action-btn trigger-cart-drawer" title="Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="action-badge cart-count-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1600&auto=format&fit=crop') center/cover;">
+    <div class="container">
+      <h1 class="page-title">Connect With Us</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt; <span>Contact Us</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        
+        <!-- Contact Form -->
+        <div class="contact-form-box">
+          <span class="section-subtitle">Send A Message</span>
+          <h2 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 12px;">We'd Love To Hear From You</h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 0.95rem;">Have questions regarding orders, tailoring customizations, or sizing? Our support stylists reply within hours.</p>
+
+          <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! A representative will contact you shortly.'); this.reset();">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" required class="form-control" placeholder="Kasun Perera">
+              </div>
+              <div class="form-group">
+                <label>WhatsApp / Phone *</label>
+                <input type="tel" required class="form-control" placeholder="077 123 4567">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" class="form-control" placeholder="kasun@example.com">
+            </div>
+
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" class="form-control" placeholder="Inquiry about product sizing / bulk order">
+            </div>
+
+            <div class="form-group">
+              <label>Your Message *</label>
+              <textarea required class="form-control" rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Store & Direct Channels Info -->
+        <div>
+          <div style="background: #fff; border-radius: var(--border-radius); border: 1px solid var(--border-color); padding: 36px; margin-bottom: 30px;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 20px;">Flagship Store & Atelier</h3>
+            
+            <div style="display: flex; gap: 16px; margin-bottom: 20px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.12); color: var(--accent-color); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1rem; margin-bottom: 4px;">Address</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">No. 42, Galle Road, Kollupitiya, Colombo 03, Sri Lanka</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; margin-bottom: 20px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.12); color: var(--accent-color); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1rem; margin-bottom: 4px;">Phone & Hotline</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">+94 (11) 234 5678 / +94 (77) 123 4567</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; margin-bottom: 20px;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(212,175,55,0.12); color: var(--accent-color); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1rem; margin-bottom: 4px;">Opening Hours</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Monday – Sunday: 10:00 AM – 8:00 PM</p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/94771234567?text=Hi%20The%20Fashion%20Sense,%20I'd%20like%20to%20speak%20with%20a%20stylist" target="_blank" class="btn" style="width: 100%; background: #25d366; color: #fff; margin-top: 10px;">
+              <i class="fa-brands fa-whatsapp"></i> Chat Live on WhatsApp
+            </a>
+          </div>
+
+          <!-- Interactive Colombo Map Frame -->
+          <div style="border-radius: var(--border-radius); overflow: hidden; border: 1px solid var(--border-color); height: 260px; position: relative;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7891787163826!2d79.84967397499645!3d6.91578339308373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25941c4115d97%3A0xe5a3637e69f8c679!2sKollupitiya%2C%20Colombo!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div id="faq" style="margin-top: 80px;">
+        <div class="section-header">
+          <span class="section-subtitle">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+          <details style="background: #fff; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; cursor: pointer;">
+            <summary style="font-weight: 700; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              How does Cash on Delivery (COD) work?
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.85rem; color: var(--accent-color);"></i>
+            </summary>
+            <p style="margin-top: 14px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+              Simply select Cash on Delivery during checkout. Our courier service delivers the parcel to your doorstep anywhere in Sri Lanka, and you pay cash directly to the courier agent upon receiving your order.
+            </p>
+          </details>
+
+          <details style="background: #fff; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; cursor: pointer;">
+            <summary style="font-weight: 700; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              What is your exchange policy if the size does not fit?
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.85rem; color: var(--accent-color);"></i>
+            </summary>
+            <p style="margin-top: 14px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+              We offer a 7-day hassle-free exchange! If your garment doesn't fit quite right, WhatsApp us with your order number. Our rider will drop off the replacement size and pick up the exchange piece simultaneously.
+            </p>
+          </details>
+
+          <details style="background: #fff; border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; cursor: pointer;">
+            <summary style="font-weight: 700; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              How long will delivery take across Sri Lanka?
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.85rem; color: var(--accent-color);"></i>
+            </summary>
+            <p style="margin-top: 14px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+              Deliveries within the Western Province (Colombo, Gampaha, Kalutara) take 24–48 hours. Outstation deliveries take 2–3 business days. You will receive tracking SMS updates.
+            </p>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <div class="brand-logo" style="color: #fff; margin-bottom: 16px;">
+            THE FASHION <span style="color: var(--accent-color);">SENSE</span>
+          </div>
+          <p>Exquisite craftsmanship tailored for contemporary living.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">All Items</a></li>
+            <li><a href="shop.html?cat=women">Women's Wear</a></li>
+            <li><a href="shop.html?cat=men">Men's Wardrobe</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Store Location</a></li>
+            <li><a href="contact.html#faq">Exchange Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Direct Support</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Colombo 03, Sri Lanka</li>
+            <li><i class="fa-solid fa-phone"></i> +94 (77) 123 4567</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Fashion Sense. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>Your Bag (<span class="cart-count-badge">0</span>)</h3>
+      <button class="close-drawer-btn" id="closeCartDrawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-drawer-body" id="miniCartItems"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal:</span>
+        <span id="miniCartSubtotal">Rs. 0</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="cart.html" class="btn btn-primary">View Bag & Checkout</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="quickview-card">
+      <button class="close-modal-btn" id="closeQuickView"><i class="fa-solid fa-xmark"></i></button>
+      <div id="quickViewContent" style="display: contents;"></div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/94771234567?text=Hello%20The%20Fashion%20Sense!" class="whatsapp-float" target="_blank" title="WhatsApp Chat">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

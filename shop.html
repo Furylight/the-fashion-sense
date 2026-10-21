@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Collections - The Fashion Sense</title>
+  <meta name="description" content="Browse our luxury and everyday fashion collections for Men, Women, and Unisex Streetwear.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      Free Delivery Islandwide on Orders over Rs. 5,000 | Cash on Delivery available at your doorstep
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a href="index.html" class="brand-logo">
+        THE FASHION <span>SENSE</span>
+        <small>HAUTE COUTURE & LIFESTYLE</small>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link active">Shop Collection</a>
+        <a href="shop.html?cat=women" class="nav-link">Women</a>
+        <a href="shop.html?cat=men" class="nav-link">Men</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="shop.html" class="action-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="shop.html" class="action-btn" title="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge wishlist-count-badge">0</span>
+        </a>
+        <button class="action-btn trigger-cart-drawer" title="Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="action-badge cart-count-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title">Curated Wardrobe</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt; <span>Shop Collection</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Shop Layout -->
+  <div class="container">
+    <div class="shop-layout">
+      
+      <!-- Filters Sidebar -->
+      <aside class="filter-sidebar">
+        
+        <!-- Search Filter -->
+        <div class="filter-group">
+          <h4 class="filter-title">Search</h4>
+          <div style="position: relative;">
+            <input type="text" id="shop-search-input" placeholder="Search clothes..." class="form-control" style="padding-right: 36px;">
+            <i class="fa-solid fa-magnifying-glass" style="position: absolute; right: 12px; top: 14px; color: var(--text-muted);"></i>
+          </div>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="filter-group">
+          <h4 class="filter-title">Categories</h4>
+          <ul class="filter-list">
+            <li>
+              <label class="filter-label">
+                <span><input type="radio" name="filter-cat" value="all" checked> All Categories</span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-label">
+                <span><input type="radio" name="filter-cat" value="women"> Women's Wear</span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-label">
+                <span><input type="radio" name="filter-cat" value="men"> Men's Essentials</span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-label">
+                <span><input type="radio" name="filter-cat" value="unisex"> Urban Streetwear</span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-label">
+                <span><input type="radio" name="filter-cat" value="accessories"> Accessories</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Size Filter Helper -->
+        <div class="filter-group">
+          <h4 class="filter-title">Available Sizes</h4>
+          <div class="size-boxes">
+            <button type="button" class="size-btn">XS</button>
+            <button type="button" class="size-btn">S</button>
+            <button type="button" class="size-btn">M</button>
+            <button type="button" class="size-btn">L</button>
+            <button type="button" class="size-btn">XL</button>
+            <button type="button" class="size-btn">XXL</button>
+          </div>
+        </div>
+
+        <!-- WhatsApp Assistance Banner -->
+        <div style="background: rgba(37, 211, 102, 0.1); border: 1px solid rgba(37, 211, 102, 0.3); padding: 18px; border-radius: 8px; text-align: center; margin-top: 20px;">
+          <i class="fa-brands fa-whatsapp" style="font-size: 2rem; color: #25d366; margin-bottom: 8px;"></i>
+          <h5 style="font-size: 0.95rem; margin-bottom: 6px;">Need Size Advice?</h5>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px;">Chat directly with our styling consultant on WhatsApp.</p>
+          <a href="https://wa.me/94771234567?text=Hi,%20I%20need%20help%20choosing%20my%20size" target="_blank" class="btn btn-primary" style="background: #25d366; font-size: 0.8rem; padding: 8px 16px;">
+            Message Us
+          </a>
+        </div>
+
+      </aside>
+
+      <!-- Products Column -->
+      <main>
+        <!-- Top Toolbar -->
+        <div class="shop-top-bar">
+          <span id="shop-product-count" style="font-weight: 600; font-size: 0.95rem;">Loading products...</span>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <label for="sort-products" style="font-size: 0.85rem; color: var(--text-muted);">Sort By:</label>
+            <select id="sort-products" class="sort-select">
+              <option value="featured">Featured Picks</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="products-grid" id="shop-products-grid">
+          <!-- Populated by js/main.js & js/products.js -->
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <div class="brand-logo" style="color: #fff; margin-bottom: 16px;">
+            THE FASHION <span style="color: var(--accent-color);">SENSE</span>
+          </div>
+          <p>Curating refined aesthetics and sustainable contemporary silhouettes for Sri Lanka and beyond.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">All Items</a></li>
+            <li><a href="shop.html?cat=women">Women's Wear</a></li>
+            <li><a href="shop.html?cat=men">Men's Wardrobe</a></li>
+            <li><a href="shop.html?cat=unisex">Streetwear</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Store Location</a></li>
+            <li><a href="contact.html#faq">Exchange Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Direct Support</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Colombo 03, Sri Lanka</li>
+            <li><i class="fa-solid fa-phone"></i> +94 (77) 123 4567</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@thefashionsense.lk</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 The Fashion Sense. All rights reserved.</div>
+        <div class="payment-methods">
+          <span class="payment-pill">Cash on Delivery</span>
+          <span class="payment-pill">Visa / Mastercard</span>
+          <span class="payment-pill">Koko / Mintpay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>Your Bag (<span class="cart-count-badge">0</span>)</h3>
+      <button class="close-drawer-btn" id="closeCartDrawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-drawer-body" id="miniCartItems"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal:</span>
+        <span id="miniCartSubtotal">Rs. 0</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="cart.html" class="btn btn-primary">View Bag & Checkout</a>
+        <button class="btn btn-secondary" onclick="checkoutViaWhatsApp()" style="background: #25d366; color: #fff; border: none;">
+          <i class="fa-brands fa-whatsapp"></i> Quick Checkout on WhatsApp
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="quickview-card">
+      <button class="close-modal-btn" id="closeQuickView"><i class="fa-solid fa-xmark"></i></button>
+      <div id="quickViewContent" style="display: contents;"></div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/94771234567?text=Hello%20The%20Fashion%20Sense!" class="whatsapp-float" target="_blank" title="WhatsApp Chat">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
